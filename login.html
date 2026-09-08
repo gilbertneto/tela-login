@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sessão de Login</title>
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet" />
     <link rel="stylesheet" href="estilos/style.css">
     <link rel="stylesheet" href="estilos/mediaqueries.css">
 </head>
@@ -18,29 +18,26 @@
             </div>
             <div id="form">
                 <h1>Login</h1>
-                <p>Seja bem-vindo(a) novamente à sessão de login. Realize seu acesso para alterar as configurações do seu ambiente.
+                <p>Seja bem-vindo(a) novamente à sessão de login. Realize seu acesso para alterar as configurações de ambiente.
                 </p>
+
                 <form action="login.java" method="post" autocomplete="on">
                     <div class="campo">
-                        <p>
-                            <label for="iusuario">
-                                <i id="icoemail" class="material-symbols-outlined">person</i>
-                            </label>
-                            <input type="email" name="usuario" id="iusuario" placeholder="Digite seu email" required
-                                autocomplete="email" minlength="8" maxlength="30">
-                        </p>
+                        <i id="icoemail" class="material-icons">person</i>
+                        <input type="email" name="usuario" id="iusuario" placeholder="Digite seu email" required
+                            autocomplete="email" minlength="8" maxlength="30">
+                        <label for="iusuario">Login</label>
                     </div>
-                    <div class="outros">
-                        <p>
-                            <label for="isenha">
-                                <i id="icosenha" class="material-symbols-outlined">key</i>
-                            </label>
-                            <input type="password" name="senha" id="isenha" placeholder="Digite sua senha" required
-                                autocomplete="current-password" minlength="8" maxlength="15">
-                        </p>
+                    <div class="campo">
+                        <i id="icosenha" class="material-icons">vpn_key</i>
+                        <input type="password" name="senha" id="isenha" placeholder="Digite sua senha" required
+                            autocomplete="current-password" minlength="8" maxlength="15">
+                        <label for="isenha">Senha</label>
                     </div>
-                    <button type="submit">Entrar</button>
-                    <span class="psw">Esqueceu a <a href="#">senha</a>?</span>
+
+                    <input type="submit" value="Entrar"></input>
+                    <span class="psw"><a href="esqueci.html">Esqueci minha senha</a></span>
+
                 </form>
             </div>
         </section>

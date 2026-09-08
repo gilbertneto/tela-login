@@ -1,14 +1,14 @@
 @charset "UTF-8";
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
-    body {
+    body { /* CONFIG TABLET */
         background-image: linear-gradient(to bottom, #B9BBBA, #A69F94);
     }
     
     
     section#container {
         width: 80vw;
-
+        height: 300px;
     }
 
     section#container > div#imagem {
@@ -21,16 +21,28 @@
         float: right;
         width: 70%;
     }
+
+
+    div.campo > input {
+        width: calc(100% - 40px);
+        border-radius: 5px;
+    }
 }
 
 @media screen and (min-width: 992px) {
-    body {
+    body { /* CONFIG COMPUTADOR */
         background-image: linear-gradient(to bottom, #B9BBBA, #A69F94);
+    }
+
+    div.campo > input {
+        width: calc(100% - 40px);
+        border-radius: 5px;
     }
 
     
     section#container {
         width: 950px;
+        height: 500px;
     }
     
     section#container > div#imagem {
