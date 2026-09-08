@@ -21,22 +21,26 @@
                 <p>Seja bem-vindo(a) novamente à sessão de login. Realize seu acesso para alterar as configurações do seu ambiente.
                 </p>
                 <form action="login.java" method="post" autocomplete="on">
-                    <p>
-                        <label for="iusuario">
-                            <i id="icoemail" class="material-symbols-outlined">person</i>
-                        </label>
-                        <input type="email" name="usuario" id="iusuario" placeholder="Digite seu email" required
-                            autocomplete="email">
-                    </p>
-                    <p>
-                        <label for="isenha">
-                            <i id="icosenha" class="material-symbols-outlined">key</i>
-                        </label>
-                        <input type="password" name="senha" id="isenha" placeholder="Digite sua senha" required
-                            autocomplete="current-password">
-                    </p>
+                    <div class="campo">
+                        <p>
+                            <label for="iusuario">
+                                <i id="icoemail" class="material-symbols-outlined">person</i>
+                            </label>
+                            <input type="email" name="usuario" id="iusuario" placeholder="Digite seu email" required
+                                autocomplete="email" minlength="8" maxlength="30">
+                        </p>
+                    </div>
+                    <div class="outros">
+                        <p>
+                            <label for="isenha">
+                                <i id="icosenha" class="material-symbols-outlined">key</i>
+                            </label>
+                            <input type="password" name="senha" id="isenha" placeholder="Digite sua senha" required
+                                autocomplete="current-password" minlength="8" maxlength="15">
+                        </p>
+                    </div>
                     <button type="submit">Entrar</button>
-                    <span class="psw">Esqueceu a <a href="#">senha?</a></span>
+                    <span class="psw">Esqueceu a <a href="#">senha</a>?</span>
                 </form>
             </div>
         </section>
