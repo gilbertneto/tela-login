@@ -1,70 +1,66 @@
 @charset "UTF-8";
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
-    body { /* CONFIG TABLET */
+    body {
+        /* CONFIG TABLET */
         background-image: linear-gradient(to bottom, #B9BBBA, #A69F94);
     }
-    
-    
+
     section#container {
         width: 80vw;
         height: 300px;
     }
 
-    section#container > div#imagem {
+    section#container>div#imagem {
         float: left;
         width: 30%;
         height: 100%;
     }
 
-    section#container > div#form {
+    section#container>div#form {
         float: right;
         width: 70%;
     }
 
-
     div.campo > input {
-        width: calc(100% - 40px);
-        border-radius: 5px;
+        width: calc(100% - 45px); 
     }
+
 }
 
 @media screen and (min-width: 992px) {
-    body { /* CONFIG COMPUTADOR */
+   
+    body {
+        /* CONFIG COMPUTADOR */
         background-image: linear-gradient(to bottom, #B9BBBA, #A69F94);
     }
 
-    div.campo > input {
-        width: calc(100% - 40px);
-        border-radius: 5px;
-    }
-
-    
     section#container {
         width: 950px;
         height: 500px;
     }
-    
-    section#container > div#imagem {
+
+    section#container>div#imagem {
         float: right;
         width: 50%;
         height: 100%;
     }
 
-    section#container > div#form {
+    section#container>div#form {
         float: left;
         width: 50%;
     }
 
-    div#form > h1 {
+    div#form>h1 {
         font-size: 2em;
     }
 
-    div#form > p {
-    font-size: 1.2em;
-    margin-bottom: 5px;
-}
+    div#form>p {
+        font-size: 1.2em;
+        margin-bottom: 5px;
+    }
 
-
+    div.campo > input {
+        width: calc(100% - 45px); 
+    }
 }
-    
